@@ -1,8 +1,9 @@
 define([
   'backbone',
+  'models/model',
   'views/index',
   'views/taskList'
-], function(Backbone, IndexView, TaskList){
+], function(Backbone, TaskModel, IndexView, TaskList){
 
   var Router = Backbone.Router.extend({
     routes: {
@@ -12,7 +13,7 @@ define([
     },
 
     indexPage: function(){
-      console.log('index page');
+      app.taskModel = new TaskModel();
       app.homeView = new IndexView();
     },
     taskList: function(){

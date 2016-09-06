@@ -1,9 +1,9 @@
-define(['backbone'], function(Backbone){
+define(['backbone', 'models/model'], function(Backbone, TaskModel){
   var TaskCollection = Backbone.Collection.extend({
-    defaults: {
-      title: '',
-      description: '',
-      date: ''
+    model: TaskModel,
+
+    initialize: function(data){
+
     }
   });
 

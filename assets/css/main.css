@@ -2,3 +2,45 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    background: rgba(246, 255, 199, 1);
+}
+
+.menu{
+    text-align: center;
+    font-family: 'Arial';
+}
+
+.menu > li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 7px 20px;
+    background: #ff5f66;
+    color: #ffffff;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu > li:hover{
+    background: #ff2c31;
+}
+
+.tasks{
+    font-family: 'Arial';
+}
+
+.task{
+    margin: 20px auto;
+    max-width: 400px;
+    background: rgb(255, 219, 128);
+    border: 2px solid #ff5f66;
+    padding: 20px;
+}
+
+.task-title{
+    text-transform: uppercase;
+    color: #ff2c31;
+    border-bottom: 1px solid #ff5f66;
+    margin-bottom: 10px;
+}
